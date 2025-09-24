@@ -17,15 +17,15 @@ class MainActivity : ComponentActivity() {
 
     // Get the API key from the gitignored resources file (res/values/api_keys.xml)
     // See README.md for more information on how to set an API key.
-    val apiKey = getString(R.string.map_style_key)
+//    val apiKey = getString(R.string.map_style_key)
 
     // Create a dynamic style provider
     val mapLibreStyleProvider =
         MapLibreSystemThemeStyleProvider(
             lightModeStyleUrl =
-                "https://tiles.stadiamaps.com/styles/alidade_smooth.json?api_key=$apiKey",
+                "https://tiles.openfreemap.org/styles/liberty",
             darkModeStyleUrl =
-                "https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json?api_key=$apiKey")
+                "https://tiles.openfreemap.org/styles/liberty")
 
     setContent {
       MapLibreStyleProviding(mapLibreStyleProvider) {

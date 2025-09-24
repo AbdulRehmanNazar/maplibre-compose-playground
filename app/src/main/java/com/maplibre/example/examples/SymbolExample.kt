@@ -14,6 +14,7 @@ import com.maplibre.compose.symbols.Circle
 import com.maplibre.compose.symbols.CircleWithItem
 import com.maplibre.compose.symbols.Polyline
 import com.maplibre.compose.symbols.Symbol
+import com.maplibre.compose.symbols.SymbolMarker
 import com.maplibre.compose.symbols.builder.SymbolText
 import com.maplibre.compose.symbols.models.SymbolOffset
 import com.maplibre.example.R
@@ -51,6 +52,19 @@ fun SymbolExample() {
                 imageOffset = SymbolOffset(-20f, 20f),
                 onTap = { Log.d("SymbolExample", "Tapped blue star") },
                 onLongPress = { Log.d("SymbolExample", "Long pressed blue star") })
+
+          SymbolMarker(
+              center = LatLng(1.253, 104.019),
+              label = "A",
+              onTap = {},
+              onLongPress = {}
+          )
+          SymbolMarker(
+              center = LatLng(1.203, 104.018),
+              label = "B",
+              onTap = {},
+              onLongPress = {}
+          )
 
             CircleWithItem(
                 center = LatLng(1.173, 103.969),
