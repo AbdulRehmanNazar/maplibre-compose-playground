@@ -10,3 +10,5 @@
 .cxx
 local.properties
 api_keys.xml
+gradle.properties
+secring.asc

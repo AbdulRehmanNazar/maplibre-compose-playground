@@ -67,15 +67,15 @@ mavenPublishing {
   publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
   signAllPublications()
 
-  coordinates("io.github.rallista", "maplibre-compose", project.version.toString())
+  coordinates("io.github.abdulrehmannazar", "maplibre-compose-fork", "1.0.0")
 
   configure(AndroidSingleVariantLibrary(sourcesJar = true, publishJavadocJar = true))
 
   pom {
     name.set("Maplibre Compose")
-    url.set("https://github.com/Rallista/maplibre-compose-playground")
-    description.set("Composable UI wrapper for Maplibre-Native Android")
-    inceptionYear.set("2023")
+    url.set("https://github.com/AbdulRehmanNazar/maplibre-compose-playground")
+    description.set("Composable UI wrapper for Maplibre-Native Android with Custom marker")
+    inceptionYear.set("2025")
     licenses {
       license {
         name.set("MPL-2.0")
@@ -84,14 +84,9 @@ mavenPublishing {
     }
     developers {
       developer {
-        name.set("Jacob Fielding")
-        organization.set("Rallista")
-        organizationUrl.set("https://rallista.app")
-      }
-      developer {
-        name.set("Ian Wagner")
-        organization.set("Stadia Maps")
-        organizationUrl.set("https://stadiamaps.com/")
+        name.set("Abdul Rehman Nazar")
+        organization.set("Dev Techlogix")
+        email.set("a.rehman.nazar@gmail.com")
       }
     }
     contributors {
@@ -101,9 +96,9 @@ mavenPublishing {
       }
     }
     scm {
-      connection.set("scm:git:https://github.com/Rallista/maplibre-compose-playground.git")
-      developerConnection.set("scm:git:ssh://github.com/Rallista/maplibre-compose-playground.git")
-      url.set("https://github.com/Rallista/maplibre-compose-playground")
+      connection.set("scm:git:https://github.com/AbdulRehmanNazar/maplibre-compose-playground.git")
+      developerConnection.set("scm:git:ssh://github.com/AbdulRehmanNazar/maplibre-compose-playground.git")
+      url.set("https://github.com/AbdulRehmanNazar/maplibre-compose-playground")
     }
 
     withXml {
