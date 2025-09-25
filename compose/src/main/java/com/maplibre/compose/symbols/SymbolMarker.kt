@@ -57,6 +57,10 @@ fun SymbolMarker(
     center: LatLng,
     label: String,
     mapImageId: String = "custom_marker_${label}",
+    isDraggable: Boolean = false,
+    zIndex: Int = 0,
+    imageAnchor: String = ICON_ANCHOR_CENTER,
+    imageOffset: SymbolOffset = SymbolOffset(),
     onTap: () -> Unit = {},
     onLongPress: () -> Unit = {}
 ) {
@@ -80,11 +84,13 @@ fun SymbolMarker(
 
     ComposeNode<SymbolNode, MapApplier>(
         factory = {
-            val symbolManager = mapApplier.getOrCreateSymbolManagerForZIndex(0)
+            val symbolManager = mapApplier.getOrCreateSymbolManagerForZIndex(zIndex)
             val symbolOptions = SymbolOptions()
                 .withLatLng(center)
+                .withDraggable(isDraggable)
                 .withIconImage(mapImageId)
-                .withIconAnchor(Property.ICON_ANCHOR_BOTTOM) // bottom point is pin tip
+                .withIconOffset(imageOffset.toMaplibreOffset())
+                .withIconAnchor(imageAnchor) // bottom point is pin tip
             val symbol = symbolManager.create(symbolOptions)
             SymbolNode(symbolManager, symbol, onTap = { onTap() }, onLongPress = { onLongPress() })
         },

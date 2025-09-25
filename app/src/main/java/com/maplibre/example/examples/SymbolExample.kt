@@ -19,6 +19,8 @@ import com.maplibre.compose.symbols.builder.SymbolText
 import com.maplibre.compose.symbols.models.SymbolOffset
 import com.maplibre.example.R
 import org.maplibre.android.geometry.LatLng
+import org.maplibre.android.style.layers.Property
+import org.maplibre.android.style.layers.Property.ICON_ANCHOR_CENTER
 import org.maplibre.android.style.layers.Property.TEXT_ANCHOR_BOTTOM_RIGHT
 
 @Composable
@@ -56,11 +58,13 @@ fun SymbolExample() {
           SymbolMarker(
               center = LatLng(1.253, 104.019),
               label = "A",
+              zIndex = 5,
               onTap = {},
               onLongPress = {}
           )
           SymbolMarker(
-              center = LatLng(1.203, 104.018),
+              center = LatLng(1.253, 104.019),
+              imageAnchor = Property.ICON_ANCHOR_TOP,
               label = "B",
               onTap = {},
               onLongPress = {}

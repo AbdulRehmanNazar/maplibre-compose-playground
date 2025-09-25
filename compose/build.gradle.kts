@@ -63,11 +63,13 @@ dependencies {
   debugImplementation(libs.androidx.ui.test.manifest)
 }
 
+
+
 mavenPublishing {
   publishToMavenCentral(SonatypeHost.CENTRAL_PORTAL)
   signAllPublications()
 
-  coordinates("io.github.abdulrehmannazar", "maplibre-compose-fork", "1.0.0")
+  coordinates("io.github.abdulrehmannazar", "maplibre-compose-fork", "1.0.1")
 
   configure(AndroidSingleVariantLibrary(sourcesJar = true, publishJavadocJar = true))
 
