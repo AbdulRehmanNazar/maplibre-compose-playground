@@ -1,4 +1,5 @@
 # MapLibre Compose Playground
+This is Fork to add functionality to add a custom markeres with number and style over the map
 
 This project is based off of <https://github.com/ramani-maps/ramani-maps> [MPL-2.0 License] and takes a different approach to top level API, emphasizing parity with <https://github.com/maplibre/swiftui-dsl> for <https://github.com/stadiamaps/ferrostar>.
 
@@ -7,7 +8,7 @@ This project is based off of <https://github.com/ramani-maps/ramani-maps> [MPL-2
 This library is published through Maven Central. In your app `build.gradle` add:
 
 ```groovy
-implementation 'io.github.rallista:maplibre-compose:0.0.16'
+implementation("io.github.abdulrehmannazar:maplibre-compose-fork:1.0.2")
 ```
 
 > Note: GitHub package manager releases are deprecated but will remain available.
