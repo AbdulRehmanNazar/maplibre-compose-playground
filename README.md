@@ -13,6 +13,11 @@ This library is published through Maven Central. In your app `build.gradle` add:
 implementation("io.github.abdulrehmannazar:maplibre-compose-fork:1.0.2")
 ```
 
+![489896838-77a92668-2830-4f11-87ea-a2ec8e324fb4](https://github.com/user-attachments/assets/a54117f5-735a-4e69-96af-eeae6bd947c2)
+
+
+
+
 > Note: GitHub package manager releases are deprecated but will remain available.
 
 ## Usage
