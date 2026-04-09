@@ -2,6 +2,8 @@
 This is Fork to add functionality to add a custom markeres with number and style over the map
 
 This project is based off of <https://github.com/ramani-maps/ramani-maps> [MPL-2.0 License] and takes a different approach to top level API, emphasizing parity with <https://github.com/maplibre/swiftui-dsl> for <https://github.com/stadiamaps/ferrostar>.
+Maven publishing link
+<https://central.sonatype.com/artifact/io.github.abdulrehmannazar/maplibre-compose-fork/overview>
 
 ## Getting Started
 
